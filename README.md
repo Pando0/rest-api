@@ -1,8 +1,8 @@
 # Welcome
-Esse é um projeto de API de controle de usuarios em NodeJS utilizando diversas  tecnologias.
+Este é um projeto de API de controle de usuários em NodeJS.
 
 # Objetivo
-1. Ser uma RESTful API que futuramente sera utilizada em algum projeto front end meu.
+1. Ser uma RESTful API que futuramente sera utilizada em algum projeto front-end meu.
 2. Consolidar meus conhecimentos em criar APIs e CRUD.
 
 # Tecnologias 
@@ -11,8 +11,8 @@ Esse é um projeto de API de controle de usuarios em NodeJS utilizando diversas 
 - Sequelize
 - PostgreSQL
 
-# Instalacão
-1. Inicie um banco de dados e coloque as informações dele para sererm exportadas  no arquivo `src/config/database.js`
+# Instalação
+1. Inicie um banco de dados e coloque as informações dele para serem exportadas  no arquivo `src/config/database.js`
 2. Instale as dependencias com o comando:
 ``` bash
 npm install
@@ -21,6 +21,7 @@ npm install
 ``` bash
 npm start
 ```
+para iniciar a aplicacão.
 
 # TO-DOS
 - [x] Iniciar o projeto e as pastas
