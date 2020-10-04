@@ -1,14 +1,11 @@
-/*
-Neste arquivo você insere as informações
-do seu banco.
-*/
+require('dotenv').config()
 
 module.exports = {
-	dialect: 'postgres', // Tipo do banco
-	host: 'localhost', // Hostname
-	username: 'root', // Nome de usuario
-	password: '12345', // Senha
-	database: 'main', // Nome do banco
+	dialect: process.env.DB_DIALECT,
+	host: process.env.DB_HOSTNAME, 
+	username: process.env.DB_USERNAME, 
+	password: process.env.DB_PASSWORD,
+	database: process.env.DB_DATABASE, 
 	define: {
 		timestamps: true,
 		underscored: true,

@@ -12,11 +12,25 @@ Este é um projeto de API de controle de usuários em NodeJS.
 - PostgreSQL
 
 # Instalação
-1. Inicie um banco de dados e coloque as informações dele para serem exportadas  no arquivo `src/config/database.js`
+1. Inicie um banco de dados e coloque as informações necessárias em um arquivo `.env` na raiz do projeto.
+Template do arquivo `.env`:
+``` .env
+# DATABASE
+DB_DIALECT="Tipo do banco"
+DB_HOSTNAME="Nome do host"
+DB_USERNAME="Nome do usuário"
+DB_PASSWORD="Senha"
+DB_DATABASE="Nome do banco"
+
+# SERVER
+PORT="Porta do server"
+```
+
 2. Instale as dependencias com o comando:
 ``` bash
 npm install
 ```
+
 3. E por fim rode o comando:
 ``` bash
 npm start
