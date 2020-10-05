@@ -43,7 +43,7 @@ para iniciar a aplicacão.
 - [x] Conectar com o banco
 
 ## Gerenciamento do banco
-- [ ] Criar o model de usuario
+- [x] Criar o model de usuario
 - [ ] Criar o controller para o model de usuario
 
 ## Rotas
