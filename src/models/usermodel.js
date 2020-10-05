@@ -23,11 +23,4 @@ User.addHook('beforeCreate', async (user) => {
 	user.password = await bcrypt.hashSync(user.password)
 })
 
-module.exports = new Promise((res, rej) => {
-	try {
-		User.sync()
-		res(User)
-	} catch(err) {
-		rej(err)
-	}
-})
+module.exports = User

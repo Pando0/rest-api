@@ -44,10 +44,10 @@ para iniciar a aplicacão.
 
 ## Gerenciamento do banco
 - [x] Criar o model de usuario
-- [ ] Criar o controller para o model de usuario
+- [x] Criar o controller para o model de usuario
 
 ## Rotas
-- [ ] Criar rota de registro de usuarios
+- [x] Criar rota de registro de usuarios
 - [ ] Criar rota de login de usuarios
 - [ ] Criar rota de deletar usuarios
 - [ ] Criar rota de modificar certo usuario
