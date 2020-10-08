@@ -7,8 +7,6 @@ function App() {
 	app.use(bodyparser.urlencoded({extended: false}))
 	app.use(bodyparser.json())
 	app.use(cors())
-
-	require('./routes')(app)
 	
 	return {
 		app
