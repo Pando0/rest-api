@@ -1,11 +1,26 @@
 const Sequelize = require('sequelize')
-const DbConfig = require('../config/database.js')
 
-function DbConnection() {
+function DbConnection(dbConfig) {
+	console.log('> [database] Starting...')
+	const db = new Sequelize(dbConfig)
+
+	const start = () => {
+		console.log('> [database] Started!')
+		return {
+			db,
+			Sequelize
+		}
+	}
+
+	const stop = () => {
+		console.log('> [database] Stopping...')
+		return db.close()
+	}
+
 	return {
-		db: new Sequelize(DbConfig),
-		Sequelize
+		start,
+		stop
 	}
 }
 
-module.exports = DbConnection()
+module.exports = DbConnection

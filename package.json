@@ -2,7 +2,7 @@
   "name": "rest-api",
   "version": "1.0.0",
   "description": "Uma api de cadastros de usuarios.",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
     "dev": "clear && nodemon .",
     "start": "clear && node .",
