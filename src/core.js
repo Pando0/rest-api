@@ -1,10 +1,27 @@
+function getConfig() {
+	return require('./config')
+}
+
+function getDatabase() {
+	return require('./database')
+}
+
+async function testDatabase(db, dbConfig) {
+	const dbConnected = db(dbConfig).start()
+	await dbConnected.db.authenticate()
+	return await dbConnected
+}
+
+function getApp() {
+	return require('./app')()
+}
+
 async function exportDependencies() {
 	try {
-		const config = require('./config')
-		const db = require('./database')(config.dbConfig)
-		const dbConnected = db.start()
-		await dbConnected.db.authenticate()
-		const { app } = require('./app')()
+		const config = getConfig()
+		const db = getDatabase()
+		const dbConnected = await testDatabase(db, config.dbConfig)
+		const { app } = getApp()
 
 		return {
 			dbConnected,
